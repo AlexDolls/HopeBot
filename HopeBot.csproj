@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
-      <HintPath>..\packages\AngleSharp.0.9.9\lib\net45\AngleSharp.dll</HintPath>
+      <HintPath>..\packages\AngleSharp.0.9.9.1\lib\net45\AngleSharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -164,7 +164,6 @@
     <Compile Include="Models\Bot.cs" />
     <Compile Include="Models\Commands\Command.cs" />
     <Compile Include="Models\Commands\HelloCommand.cs" />
-    <Compile Include="Models\Commands\ParsMyGazeta\Parser.cs" />
     <Compile Include="Models\Commands\RollCommand.cs" />
     <Compile Include="Models\Commands\ServerInfoCommand.cs" />
     <Compile Include="Models\Commands\TodayCommand.cs" />
@@ -172,6 +171,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\back.png" />
+    <Content Include="Content\background.mp3" />
+    <Content Include="Content\test.png" />
+    <Content Include="Content\vika.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -187,7 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
